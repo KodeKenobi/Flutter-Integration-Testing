@@ -23,7 +23,6 @@ flutter upgrade
 ```dart
 - Run flutter run
 
-
 - You should see the app working at this point..
 
 ### Architecture 🏗🏗
