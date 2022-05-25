@@ -1,5 +1,5 @@
 # screener
-- This is a sample application.
+- This is a sample Flutter application.
 - Uses MVVM pattern
 - Tries to encourage the use of boundaries (by using the concept of packages) 
 
@@ -16,11 +16,11 @@ flutter upgrade
 
 - Install dependencies, when asked, after downloading the project.
 - Run the cmd 
+- Run flutter pub get
+- Run flutter pub upgrade --major-versions
+- Run flutter run
 
 ```dart
-flutter run
-
-```
 
 - You should see the app working at this point..
 
