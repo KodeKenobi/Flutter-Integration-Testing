@@ -1,0 +1,83 @@
+name: screener
+description: Sample Flutter Project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.15.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # CAROUSEL SLIDER
+  carousel_slider: ^4.0.0
+
+  # DI
+  get_it: ^7.2.0
+
+  # HTTP
+  http: ^0.13.4
+
+  # PROVIDER
+  provider: ^6.0.2
+
+  # WEBVIEW
+  webview_flutter: ^3.0.1
+
+  # TESTING
+  mockito: ^5.1.0
+
+  # INTERNAL PACKAGES
+  shared_components:
+    path: packages/shared_components
+
+  app_theme:
+    path: packages/app_theme
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # LINTER
+  lint: ^1.2.0
+
+  build_runner: ^2.1.7
+
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/
+    - assets/images/
+    - assets/images/2.0x/
+    - assets/images/3.0x/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
