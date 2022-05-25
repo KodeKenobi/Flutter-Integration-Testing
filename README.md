@@ -18,9 +18,11 @@ flutter upgrade
 - Run the cmd 
 - Run flutter pub get
 - Run flutter pub upgrade --major-versions
-- Run flutter run
+
 
 ```dart
+- Run flutter run
+
 
 - You should see the app working at this point..
 
