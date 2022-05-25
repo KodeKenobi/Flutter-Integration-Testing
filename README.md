@@ -132,9 +132,27 @@ flutter drive \
 --target=integration_test/app_test.dart
 ```
 
-```
-flutter drive \
---driver=test_driver/integration_test.dart \
---target=integration_test/app_test.dart
--d "9B4DC39F-5419-4B26-9330-0B72FE14E15E"
-```
+### Integration Testing Explained
+- All the integration tests should be under integration_testing with the name of the file ending in _test. In our case we have one test called app_test.dart 
+- Inside our app_test , we first import the package integration test.
+- Next we call the ensureInitialized method.
+- One of the important points of integration tests is to call the main method of our main app.
+- For writing our integration test, we have followed the robot pattern. 
+
+### Robot Testing
+
+- The idea behind robot testing is that the number of screens should be equal to the number of robots. In our app we have 3 screens, Home Robot, Second Robot (where you go after you press the first button when you scroll down) and Third Robot (where you go after you press the second button when you scroll down).
+- Inside our app_test file, we create an instance of our robots.
+- One of the key points of robot testing is that the test should be readable and self-explanatory on it's own. For example, the HomeRobot says that it should find title, then scroll the page and click the first button. Similarly the SecondScreenRobot also finds the title, scroll the page, scroll the page up and go back.
+- Inside the test widgets we initialize the robots by passing it through the widget tester parameters. 
+
+### Home Robot Explained
+
+- We go to home_robot.dart file and we see that it needs a constructor parameter of type widget tester and there are some methods defined like findTitle, scrollThePage, clickFirstButton, clickSecondButton.
+- The same goes for our SecondScreenRobot which also takes the WidgetTester parameter and the ThirdScreenRobot.
+
+### Home Screen Tests
+
+- On app_test.dart, the first one is findTitle, we go to the HomeRobot and see the findTitle description  so we call the pumpAndSettle which basically allows the animations to settle in and then next we search for a title and we expect to find one widget and finally we make a call to sleep which comes from dart.io and we make it sleep for 2 seconds.
+- Next we call in the scroll. It comprises of a paraeter scrollUp, if this is true , it means we are scrolling towards the up direction., otherwise, we are scrolling in the downwards direction.The fling is responsible for scrolling and here we are passing thre ListFinder and the Offset along with the speed. 
+- Our next step is the clickFirstButton. For clickFirstButton we usef the button Finder using the key.
