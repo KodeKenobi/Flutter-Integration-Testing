@@ -155,4 +155,7 @@ flutter drive \
 
 - On app_test.dart, the first one is findTitle, we go to the HomeRobot and see the findTitle description  so we call the pumpAndSettle which basically allows the animations to settle in and then next we search for a title and we expect to find one widget and finally we make a call to sleep which comes from dart.io and we make it sleep for 2 seconds.
 - Next we call in the scroll. It comprises of a paraeter scrollUp, if this is true , it means we are scrolling towards the up direction., otherwise, we are scrolling in the downwards direction.The fling is responsible for scrolling and here we are passing thre ListFinder and the Offset along with the speed. 
-- Our next step is the clickFirstButton. For clickFirstButton we find the button Finder using the key.- We also apply the same behaviour for the second screen, we first find Title and find Title is defined the same as the Home Screen. Next we go to the scroll the page which is exactly the same as the Home Screen.  
+- Our next step is the clickFirstButton. For clickFirstButton we find the button Finder using the key.
+- Next we ensure that the button is visible and then finally we call the tap using the appropriate finder.
+- We also apply the same behaviour for the second screen, we first find Title and find Title is defined the same as the Home Screen. Next we go to the scroll the page which is exactly the same as the Home Screen.
+- Finally, we click on the go back , in the cgo back, we call the tester page Back option which tries to dismiss the current Scaffold. 
