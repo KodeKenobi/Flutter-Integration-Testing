@@ -158,4 +158,6 @@ flutter drive \
 - Our next step is the clickFirstButton. For clickFirstButton we find the button Finder using the key.
 - Next we ensure that the button is visible and then finally we call the tap using the appropriate finder.
 - We also apply the same behaviour for the second screen, we first find Title and find Title is defined the same as the Home Screen. Next we go to the scroll the page which is exactly the same as the Home Screen.
-- Finally, we click on the go back , in the cgo back, we call the tester page Back option which tries to dismiss the current Scaffold. 
+- Finally, we click on the go back, in the go back, we call the tester page Back option which tries to dismiss the current Scaffold. 
+- Finally we click on the second button which is the Third Screen and we first call the find Title. The find Title is the same as we saw in the Home Screen.
+- The next one is scroll Page which is also the same as the home screen.
