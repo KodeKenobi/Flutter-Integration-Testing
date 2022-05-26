@@ -161,3 +161,8 @@ flutter drive \
 - Finally, we click on the go back, in the go back, we call the tester page Back option which tries to dismiss the current Scaffold. 
 - Finally we click on the second button which is the Third Screen and we first call the find Title. The find Title is the same as we saw in the Home Screen.
 - The next one is scroll Page which is also the same as the home screen.
+- Next we call in the click Tile and pass the parameter as 2.
+- We are passing a parameter of 2 which creates a key of 2 in it.
+- Finally we use the tester tap to test the the second item on our list view and after clicking on it, it renders the website.
+- Finally we call in the go back. In the go back option we first find the icon close and next we use the tester tap to tap on the icon finder.
+- Next we wait for all the animations to finish and finally we click on the page back.
